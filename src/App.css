@@ -1,0 +1,48 @@
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.email-list-section, .email-body-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.email-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.email-item.read {
+  background-color: #f4f4f4;
+}
+
+.email-item.unread {
+  font-weight: bold;
+}
+
+.avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.email-info {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 60px);
+}
+
+.email-body {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}

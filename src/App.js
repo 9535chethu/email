@@ -3,11 +3,12 @@ import axios from "axios";
 import styled from "styled-components";
 import EmailList from "./EmailList";
 import EmailBody from "./EmailBody";
+import Footer from "./components/Footer";
 
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh; 
   background-color: #f4f5f9;
 `;
 
@@ -30,7 +31,7 @@ const FilterButton = styled.button`
 const ContentContainer = styled.div`
   display: flex;
   flex: 1;
-  overflow: hidden;
+  overflow: auto; 
 `;
 
 const LeftPanel = styled.div`
@@ -147,6 +148,7 @@ function App() {
           )}
         </RightPanel>
       </ContentContainer>
+      <Footer />
     </AppContainer>
   );
 }
